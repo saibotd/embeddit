@@ -4,7 +4,7 @@ var rdtCmts = {
     html = $('<div class="rdtCmts"/>');
     html.append(rdtCmts.renderComments(data[1].data));
     html.append('<a class="rdtCmtsJoin" href="http://www.reddit.com/comments/'+id+'">Join the discussion at reddit.com!</a>');
-    $("[data-rdtid='"+id+"']").append(html);
+    $("[data-rdtid='"+id+"']").html(html);
   },
   renderComments : function(data){
     var ul = $("<ul/>");
